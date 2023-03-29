@@ -1,0 +1,318 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+    margin: 0;
+
+}
+
+
+
+#backgroundScreen {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%; 
+  background-position: center;
+  filter: none;
+
+}
+#clickMe {
+
+  position: absolute;
+  display: block;
+  top: 80%;
+  left: 40%;
+}
+
+.clickButton {
+
+  width: 25vw;
+  height: 7vh;
+  background-color: #e7b698;
+  border-color: #E1A076;
+  border-style: solid;
+  border-width: 0.7vw;
+  border-radius: 2vh;
+  transition-duration: 0.4s;
+ 
+}
+
+.clickButton:hover {
+  box-shadow: 0 0 1vw white;
+  background-color: bisque; /* Green */
+  color: black;
+  cursor: pointer;
+}
+
+
+#cvWrapper {
+  position: absolute;
+  top: 0;
+  display: none;
+  grid-template-columns: 10% repeat(4, 20%) 10%;
+  grid-template-rows: 2% 5% 43% 43% 7%;
+  width: 100vw;
+  height: 100vh;
+   
+}
+
+
+
+.tabs{
+    
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    align-self: end;
+}
+
+.tabs button {
+  
+    padding: 1%;
+    background-color: bisque;
+    border-color: #e7b698;
+    border-bottom: none;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+    transition: 0.3s;
+}
+.tabButton:hover {
+  box-shadow: 0 0 1vw white;
+  background-color: bisque;
+  color: black;
+  cursor: pointer;
+}
+.tabs button.active {
+    background-color: #e7b698;
+   
+  }
+
+.tabsinfo{
+    display: none;
+}
+
+
+#hBase{
+    grid-column: 3 / span 2;
+    grid-row: 3/ span 2;
+    background-color: #e7b698;
+    border-color: solid #DEB6AB;
+    display: grid;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgb(44, 37, 31);
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    grid-template-columns: 10% 5% 70% 5% 10%;
+    grid-template-rows: 5% 45% 5% 40% 5%;
+    
+    
+  }
+
+
+  #hBase .headTh{
+    text-align: left;
+  }
+
+ #cvImag{
+    grid-row: 2;
+    grid-column: 3;
+    background-image: url("profile.png");
+    background-size: 100% 100%;
+    background-position:center;
+ }
+
+#infoTable{
+    padding: 2%;
+    border : none;
+    border-collapse: separate;
+    border-spacing: 0rem 1rem;
+    align-self: start;
+    grid-row: 4;
+    grid-column: 3;
+    
+}
+
+.infoTh {
+  font-size: large;
+  text-align: left;
+  margin-right: 1%;
+  border : none;
+
+}
+
+.infoTd {
+  border : none;
+  background-color: white;
+  text-align: left;
+}
+
+#yBase{
+    grid-column: 2 / span 4;
+    grid-row: 3/ span 2;
+    background-color: #e7b698;
+    box-shadow: 10px 10px 10px 10px rgb(44, 37, 31);
+    display: grid;
+    border-radius: 2%;
+    grid-template-columns: 2% 3% 42% 2% 2% 2% 42% 3% 2%;
+    grid-template-rows: 2% 3% 5% 35% 50% 3% 2%;
+    
+    
+  }
+  .paper1 {
+    box-shadow: -5px 0px 15px 1px rgb(114, 89, 66);
+    background-color:  white;
+    grid-row: 2 / span 5;
+    grid-column: 2 / span 3;
+  }
+
+  .paper2 {
+    box-shadow: 5px 0px 15px 1px rgb(114, 89, 66);
+    background-color: white;
+    grid-row: 2 / span 5;
+    grid-column: 6 / span 3;
+  }
+
+  
+  .pageLine {
+    grid-row: 1 / 8;
+    grid-column: 5;
+    border-left: 2px solid gray;
+    justify-self: center;
+   
+  }
+
+
+  #skillsTable{
+    
+    text-align: left;
+    align-self: stretch;
+    grid-row: 4 / span 2;
+    grid-column: 7;
+}
+
+#skillsHeader {
+  margin: 0;
+  grid-row: 3;
+  grid-column: 7;
+  align-self: start;
+}
+
+#aboutMeH2 {
+  margin: 0;
+  grid-row: 3;
+  grid-column: 3;
+  align-self: start;
+
+}
+
+#aboutMe {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  background-color: white;
+  text-align: left;
+  align-self: stretch;
+  grid-row: 4;
+  grid-column: 3;
+}
+
+#linkTable{
+    
+  text-align: left;
+  align-self: center;
+  grid-row: 5;
+  grid-column: 3;
+}
+
+
+  #wBase{
+    grid-column: 2 / span 4;
+    grid-row: 3/ span 2;
+    background-color: #e7b698;
+    box-shadow: 10px 10px 10px 10px rgb(44, 37, 31);
+    display: grid;
+    border-radius: 2%;
+    grid-template-columns: 2% 3% 42% 2% 2% 2% 42% 3% 2%;
+    grid-template-rows: 2% 3% 5% 40% 45% 3% 2%;
+    
+    
+  }
+  #coursesTable{
+
+    text-align: left;
+    align-self:stretch;
+    grid-row: 4 / span 2;
+    grid-column: 3;
+}
+#coursesH2 {
+  margin: 0;
+  grid-row: 3;
+  grid-column: 3;
+  align-self: start;
+}
+
+  #workH2 {
+    margin: 0;
+    grid-row: 3;
+    grid-column: 7;
+    align-self: start;
+  }
+
+  #workTable{
+    
+    text-align: left;
+    align-self: stretch;
+    grid-row: 4 / span 2;
+    grid-column: 7;
+}
+
+
+
+
+ table, th, td {  
+    border: 1px solid gray;
+    border-collapse: collapse;
+
+}
+
+
+.headTh {
+  background-color: lightgray;
+    font-size: larger;
+}
+
+.lowerTh{
+    background-color: whitesmoke;
+    font-size: large;
+}
+
+th {
+    background-color: white;
+    padding: 2%;
+    height: auto;
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;                            
+    padding: 1%;
+    height: auto;
+    width: fit-content;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;  
+  font-size:medium;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+button {
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; 
+}

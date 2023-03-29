@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>CV-POHJA</title>
+ <link rel="stylesheet" href = "cvStyles.css"/>
+ <script src = "cv.js"></script>
+</head>
+<body onload ="init()">
+
+        <div id = "backgroundScreen">
+
+        </div>
+        <div id = "clickMe">
+            <button class="clickButton" onclick="clickedResume()">Hakija Nro.0992</button>
+        </div>
+        
+        <div id ="cvWrapper">
+
+
+            <div class = "tabs">
+                <button class="tabButton" onclick="openTab(event, 'hBase')">Hakija</button>
+                <button class="tabButton" onclick="openTab(event, 'yBase')">Yleistiedot</button>
+                <button class="tabButton" onclick="openTab(event, 'wBase')">Kokemus</button>
+            </div>
+
+            
+            <div id = "hBase" class ="tabsinfo">
+                    <div id ="cvImag"></div>
+
+                    <table id = "infoTable">
+                        <tr>
+                            <th class = "infoTh">Nimi:</th>
+                            <td class ="infoTd">Adipisci Lorem</td>
+                        </tr>
+                        <tr>
+                            <th class = "infoTh">Koulutus:</th>
+                            <td class ="infoTd">Lorem tieteet</td>
+                        </tr>
+                        <tr>
+                            <th class = "infoTh">Ikä:</th>
+                            <td class ="infoTd">45</td>
+                        </tr>
+                        <tr>
+                            <th class = "infoTh">Asuinpaikka:</th>
+                            <td class ="infoTd">Lorem maa</td>
+                        </tr>
+
+                    </table>
+                
+            </div>
+
+            <div id = "yBase" class = "tabsinfo">
+                <div class ="paper1"></div>
+                <h2 id ="aboutMeH2">Kuvaus:</h2>
+                <div id = "aboutMe">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora. </p>
+
+                </div>
+
+                <table id = "linkTable">
+                    <tr>
+                        <th colspan="2" class = "headTh">Linkit:</th>
+                    </tr>
+                    <tr>
+                        <th class = "lowerTh">Lorem:</th>
+                        <td>https://Sed ut perspiciatis</td>
+                    </tr>
+                    <tr>
+                        <th class = "lowerTh">Lorem:</th>
+                        <td>https://Sed ut perspiciatis unde omnis</td>
+                    </tr>
+                    <tr>
+                        <th class = "lowerTh">Lorem:</th>
+                        <td>https://Sed ut perspiciatis unde omnis</td>
+                    </tr>
+                    
+                </table>
+
+                <div class ="paper2"></div>
+                <h2 id = "skillsHeader">Taidot</h2>
+                <table id = "skillsTable">
+                    <tr>
+                        <th colspan="2" class = "headTh">Hyvä osaaminen</th>
+                    </tr>
+                    <tr>
+                        <th class = "lowerTh">Kieli:</th>
+                        <th class = "lowerTh">Kuvaus:</th>
+                    </tr>
+                    <tr>
+                        <th>Java</th>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <th>C++</th>
+                        <td>Sed ut perspiciatis unde omnis.</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class = "headTh">Kohtuullinen osaaminen</th>
+                    </tr>
+                    <tr>
+                        <th class = "lowerTh">Kieli:</th>
+                        <th class = "lowerTh">Kuvaus:</th>
+                    </tr>
+                    <tr>
+                        <th>Postegrsql</th>
+                        <td>Sed ut perspiciatis unde omnis</td>
+                    </tr>
+                    <tr>
+                        <th>Kotlin</th>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>JavaScript</th>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <th>HTML & CSS & PHP</th>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    
+                    
+                    
+                </table>
+
+                <div class ="pageLine"></div>
+                
+            </div>
+
+            <div id = "wBase" class = "tabsinfo">
+
+                <div class ="paper1"></div>
+                <h2 id = "coursesH2">Ohjelmointikurssit</h2>
+                <table id = "coursesTable">
+                    <tr>
+                        <th class = "headTh">Käydyt ohjelmointikurssit:</th>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 2</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 344</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 553355</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 55</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 888</td>
+                    </tr>
+                    <tr>
+                        <th class = "headTh">Käydyt ohjelmointikurssit XXX mennessä:</th>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 55553</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 9281</td>
+                    </tr>
+                    <tr>
+                        <td>Kurssi 63</td>
+                    </tr>
+                </table>
+
+                <div class ="paper2"></div>
+                <h2 id = "workH2">Työkokemus</h2>
+                <table id = "workTable">
+                    <tr>
+                        <th class = "headTh">Paikka:</th>
+                        <th class = "headTh">Aika:</th>
+                        <th class = "headTh">Kuvaus:</th>
+                    </tr>
+                    <tr>
+                        <td>XXX Oy </td>
+                        <td>12.12.2020 – nykyinen</td>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <td>Yhtiöpyhtiö oy</td>
+                        <td>16.6-14.8.2020</td>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <td>Io oy</td>
+                        <td>2.9.2019-28.2.2020</td>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem oyj </td>
+                        <td>20-23.2.2020 </td>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+                    <tr>
+                        <td>YY ry</td>
+                        <td>22.5-17.8.2019</td>
+                        <td>Adipisci velit, sed quia non numquam.</td>
+                    </tr>
+
+                </table>
+
+                <div class ="pageLine"></div>
+            </div>
+
+        </div>
+    
+</body>
+</html>
